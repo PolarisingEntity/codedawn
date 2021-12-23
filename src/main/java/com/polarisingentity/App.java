@@ -7,7 +7,7 @@ public class App
 
     private static void menu( String[] args )
     {
-        char option = 'o';
+        char option = 0;
 
         System.out.println("Please select your desired command:");
         Scanner input = new Scanner(System.in);
@@ -42,7 +42,8 @@ public class App
             }
             if (args[0].equals("-debug")) { System.out.println("switch-statement completed!"); } 
         }
-        if (args[0].equals("-debug")) { System.out.println("Menu function closing..."); } 
+        if (args[0].equals("-debug")) { System.out.println("Menu function closing..."); }
+        input.close(); 
     }
 
     public static void main( String[] args )
